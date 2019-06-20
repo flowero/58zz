@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link href="css/cus.css" rel="stylesheet"/>
+	<!--<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>-->
+	<script type="text/javascript" charset="utf-8">
+		mui.init()
+		document.getElementById("test").addEventListener("tap", function() {
+			//调用隐藏/显示弹出层
+			mui("#popover").popover('toggle', document.getElementById("div"));
+		})
+	</script>
+</head>
+<body>
+<div class = "">
+	<div class = "follow-container">
+		<img style = "position: absolute; height: 70px;float: left; width : 100%; background-color: lemonchiffon;" />
+		<button type="button" id = "test" class="follow mui-btn mui-btn-grey">+关注</button>
+	</div>
+</div>
+
+<!-- 主界面菜单同时移动 -->
+<div id="div"></div>
+<div id="popover" class="mui-popover" style="hecight: 400px; width: 100%; left: 0px; padding-bottom: 20px;">
+	<div class="mui-popover-arrow"></div>
+	<div stylle = "display: table-cell;text-align: center; vertical-align: middle;" style = "padding-bottom: 20px;">
+		<div><h4 style = "text-align: center; padding: 50px 0; color: #06f;">长按或扫一扫二维码，关注公众号</h4></div>
+		<div style = "float: left; padding-left: 50px;" class = "div-inline">
+			<img style = " width : 120px;" src = "canvas.png" />
+			<p style = "text-align: center;">关注微信</p>
+		</div>
+		<div style = "float: right;padding-right: 50px;" class = "div-inline">
+			<img style = " width : 120px;" src = "canvas.png" />
+			<p style = "text-align: center;">关注公众号</p>
+		</div>
+	</div>
+</div>
+<div style = "padding: 20px;">
+	
+<div class="mui-slider">
+	<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+		<a class="mui-control-item" href="#item1">房产交易</a>
+		<a class="mui-control-item" href="#item2">招聘求职</a>
+		<a class="mui-control-item" href="#item3">商家推广</a>
+	</div>
+	<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+	<div class="mui-slider-group">
+		<div id="item1" class="mui-slider-item mui-control-content mui-active">
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: tomato; padding: 20px;">
+					<h4 style = "color: white;">房屋求租</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "house4sell.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: tomato; padding: 20px;">
+					<h4 style = "color: white;">房屋求购</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "house4sell.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: tomato; padding: 20px;">
+					<h4 style = "color: white;">房屋出租</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "house4sell.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: tomato; padding: 20px;">
+					<h4 style = "color: white;">房屋出售</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "house4sell.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+
+		</div>
+		<div id="item2" class="mui-slider-item mui-control-content">
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: darkorchid; padding: 20px;">
+					<h4 style = "color: white;">全职招聘</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "cv_form.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: darkorchid; padding: 20px;">
+					<h4 style = "color: white;">兼职招聘</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "cv_form.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: darkorchid; padding: 20px;">
+					<h4 style = "color: white;">求职简历</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "cv_form.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+		</div>
+		<div id="item3" class="mui-slider-item mui-control-content">
+			<ul class="mui-table-view" style = "color: white; background-color: transparent;">
+				<div style = "padding-top: 20px;">
+				<li class="mui-table-view-cell" style = "background-color: limegreen; padding: 20px;">
+					<h4 style = "color: white;">本地推广</h4>
+					<p style= "color: white;">xxx</p>
+					<div style = "padding-top: 20px;">
+						<a href = "cv_form.html">
+							<button type="button" class="mui-btn mui-btn-purple mui-btn-outlined" style = "color: white;">马上发布</button>
+						</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+	mui.init();
+	document.getElementById("test").addEventListener("tap", function() {
+				//调用隐藏/显示弹出层
+	mui("#popover").popover('toggle', document.getElementById("div"));
+	})
+</script>
+</body>
+</html>
